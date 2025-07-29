@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfq0xuwl2fpi"]
+
+[ext_resource type="Script" path="res://Scripts/Towers/Test/TestTriggerable.cs" id="1_n8uw1"]
+[ext_resource type="Resource" uid="uid://3lyg1cgoggp5" path="res://Resources/GridShapes/SingleTile.tres" id="2_x332p"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="3_dsvih"]
+
+[node name="TestTriggerable" type="Node" node_paths=PackedStringArray("_renderer")]
+script = ExtResource("1_n8uw1")
+_renderer = NodePath("Node2D")
+Shape = ExtResource("2_x332p")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_dsvih")
+Color = Color(0.112062, 0.649889, 0.695573, 1)
+ShowOutline = false

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MobList" load_steps=5 format=3 uid="uid://li6yyo05mosr"]
+
+[ext_resource type="Script" path="res://Scripts/GameData/MobList/MobList.cs" id="1_dvym4"]
+[ext_resource type="PackedScene" uid="uid://bg0tah1rdbv11" path="res://Scenes/Mobs/TestMob.tscn" id="1_uma5t"]
+[ext_resource type="Script" path="res://Scripts/GameData/MobList/MobData.cs" id="2_a1jyj"]
+
+[sub_resource type="Resource" id="Resource_fhqj1"]
+script = ExtResource("2_a1jyj")
+_name = "Test"
+_template = ExtResource("1_uma5t")
+
+[resource]
+script = ExtResource("1_dvym4")
+_mobs = Array[Object]([SubResource("Resource_fhqj1")])

@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tower Defence", "Tower Defence.csproj", "{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "Godot_v4.3-stable_mono_win64", "..\..\..\..\..\Godot\Godot_v4.3-stable_mono_win64\Godot_v4.3-stable_mono_win64\Godot_v4.3-stable_mono_win64.exe", "{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Godot\Godot_v4.3-stable_mono_win64\Godot_v4.3-stable_mono_win64\Godot_v4.3-stable_mono_win64.exe
+		RemoteMachine = DESKTOP-0HB36LU
+		StartingDirectory = C:\Godot\Godot_v4.3-stable_mono_win64\Godot_v4.3-stable_mono_win64
+		Arguments = --path "C:\Users\kevin\Documents\Godot\Tower Defence"
+		Environment = Default
+		LaunchingEngine = e55ccc87-77c9-4222-8310-09f38e24c40f
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportDebug|x64 = ExportDebug|x64
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+		ExportRelease|x64 = ExportRelease|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Debug|x64.Build.0 = Debug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportDebug|x64.ActiveCfg = ExportDebug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportDebug|x64.Build.0 = ExportDebug|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportRelease|x64.ActiveCfg = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.ExportRelease|x64.Build.0 = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Release|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Release|Any CPU.Build.0 = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Release|x64.ActiveCfg = ExportRelease|Any CPU
+		{7B5F06F3-E27B-433A-B10E-3C5B90B5E7E6}.Release|x64.Build.0 = ExportRelease|Any CPU
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.Debug|Any CPU.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.Debug|x64.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.ExportDebug|Any CPU.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.ExportDebug|x64.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.ExportRelease|Any CPU.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.ExportRelease|x64.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.Release|Any CPU.ActiveCfg = Release|x64
+		{246D9CDD-7630-41F9-AB3D-0C9E7AD0C8F9}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAD3DE5A-2707-4308-B4D0-66A3492215E5}
+	EndGlobalSection
+EndGlobal

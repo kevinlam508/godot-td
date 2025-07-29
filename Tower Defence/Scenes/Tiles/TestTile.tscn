@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cybp4tls6rvdf"]
+
+[ext_resource type="Script" path="res://Scripts/TerrainGrid/TerrainHex.cs" id="1_bfdab"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="2_tsg1t"]
+
+[node name="TestTile" type="Node" node_paths=PackedStringArray("_positionRoot", "_renderer")]
+script = ExtResource("1_bfdab")
+_positionRoot = NodePath("PositionRoot")
+_renderer = NodePath("PositionRoot/Tile")
+
+[node name="PositionRoot" type="Node2D" parent="."]
+
+[node name="Tile" type="Node2D" parent="PositionRoot"]
+script = ExtResource("2_tsg1t")
+Color = Color(0.419608, 0.486275, 0.564706, 1)
+Size = 10.0

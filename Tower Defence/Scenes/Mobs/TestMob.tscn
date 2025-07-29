@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg0tah1rdbv11"]
+
+[ext_resource type="Script" path="res://Scripts/Monsters/TestMob.cs" id="1_erqwb"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="2_u5ns8"]
+
+[node name="TestMob" type="Node" node_paths=PackedStringArray("_positionRoot")]
+script = ExtResource("1_erqwb")
+_maxSpeed = 100.0
+_acceleration = 320.0
+_positionRoot = NodePath("PositionRoot")
+
+[node name="PositionRoot" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="PositionRoot"]
+rotation = 0.741765
+script = ExtResource("2_u5ns8")
+Color = Color(0.958995, 0.282395, 0.481606, 1)
+ShowOutline = false

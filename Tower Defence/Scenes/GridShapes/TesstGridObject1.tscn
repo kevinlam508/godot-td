@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://behbynvxtn6ul"]
+
+[ext_resource type="Script" path="res://Scripts/GridObjects/GenericGridObject.cs" id="1_vt4es"]
+[ext_resource type="PackedScene" uid="uid://dev3r0gdwqiog" path="res://Scenes/GridShapes/BasicTileRenderer.tscn" id="2_7v43v"]
+[ext_resource type="Resource" uid="uid://qe66gld2gbbu" path="res://Resources/GridShapes/TestTowerShape1.tres" id="3_l3dmj"]
+
+[node name="TesstGridObject1" type="Node"]
+script = ExtResource("1_vt4es")
+_tileRenderer = ExtResource("2_7v43v")
+Shape = ExtResource("3_l3dmj")

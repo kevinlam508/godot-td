@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TowerData" load_steps=3 format=3 uid="uid://djjpwvcnj5ssn"]
+
+[ext_resource type="Script" path="res://Scripts/GameData/TowerData.cs" id="1_7ennk"]
+[ext_resource type="PackedScene" uid="uid://behbynvxtn6ul" path="res://Scenes/GridShapes/TesstGridObject1.tscn" id="1_8ngbw"]
+
+[resource]
+script = ExtResource("1_7ennk")
+_name = "Test1"
+_cost = 10
+_towerScene = ExtResource("1_8ngbw")

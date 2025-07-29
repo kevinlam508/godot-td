@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://dav8kn6d1patp"]
+
+[node name="LevelUi" type="CanvasLayer"]
+layer = 10

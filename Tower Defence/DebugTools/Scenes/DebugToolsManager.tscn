@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6rycspm0y6tu"]
+
+[ext_resource type="Script" path="res://DebugTools/Scripts/DebugToolManager.cs" id="1_m6jqj"]
+
+[node name="DebugToolsManager" type="CanvasLayer" node_paths=PackedStringArray("_toolNameText")]
+layer = 100
+script = ExtResource("1_m6jqj")
+_toolNameText = NodePath("MarginContainer/Current Tool Label")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Current Tool Label" type="RichTextLabel" parent="MarginContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+text = "Test Tool Name"
+autowrap_mode = 0

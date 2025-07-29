@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bob1lnhy2gtxc"]
+
+[ext_resource type="Script" path="res://Scripts/Input/InputManager.cs" id="1_kmyrk"]
+[ext_resource type="Resource" uid="uid://cnx1rromj5j25" path="res://Resources/InputGroups.tres" id="2_1gftt"]
+
+[node name="InputManager" type="Node"]
+script = ExtResource("1_kmyrk")
+_groups = ExtResource("2_1gftt")

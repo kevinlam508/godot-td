@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7dsuiahwxvix"]
+
+[ext_resource type="Script" path="res://Scripts/DataSystems/Gameplay/Spawn/Mob/MobSpawnSystem.cs" id="1_fikdt"]
+[ext_resource type="PackedScene" uid="uid://bg0tah1rdbv11" path="res://Scenes/Mobs/TestMob.tscn" id="2_qotcn"]
+
+[node name="MobSpawnSystem" type="Node"]
+script = ExtResource("1_fikdt")
+_testMob = ExtResource("2_qotcn")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddiwsvhmfads8"]
+
+[ext_resource type="Script" path="res://Scripts/Towers/BasicTrigger.cs" id="1_b8bq5"]
+[ext_resource type="Resource" uid="uid://3lyg1cgoggp5" path="res://Resources/GridShapes/SingleTile.tres" id="2_aqf46"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="3_nwfag"]
+
+[node name="BasicTrigger" type="Node" node_paths=PackedStringArray("_renderer")]
+script = ExtResource("1_b8bq5")
+_renderer = NodePath("Node2D")
+Shape = ExtResource("2_aqf46")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_nwfag")
+Color = Color(1, 0.278431, 0.0823529, 1)
+ShowOutline = false

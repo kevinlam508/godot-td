@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TowerList" load_steps=8 format=3 uid="uid://bau7v6bgwxa6r"]
+
+[ext_resource type="Resource" uid="uid://djjpwvcnj5ssn" path="res://Resources/TowerData/TestTower1.tres" id="1_6artk"]
+[ext_resource type="Resource" uid="uid://c7jk1yfbuehux" path="res://Resources/TowerData/Basic Trigger.tres" id="1_dhu71"]
+[ext_resource type="Script" path="res://Scripts/GameData/TowerList.cs" id="1_fdvbn"]
+[ext_resource type="Resource" uid="uid://btsc42cwhjmtp" path="res://Resources/TowerData/TestTower2.tres" id="2_4e4qj"]
+[ext_resource type="Resource" uid="uid://dlsjggih76yk3" path="res://Resources/TowerData/TestTriggerable.tres" id="2_h6bje"]
+[ext_resource type="Resource" uid="uid://dyols25bquneh" path="res://Resources/TowerData/TestTriggerTriggerable.tres" id="3_b0txb"]
+[ext_resource type="Resource" uid="uid://b71brxsomp7n4" path="res://Resources/TowerData/TestProjectileTriggerable.tres" id="6_xvelj"]
+
+[resource]
+script = ExtResource("1_fdvbn")
+_entries = Array[Object]([ExtResource("1_dhu71"), ExtResource("2_h6bje"), ExtResource("3_b0txb"), ExtResource("1_6artk"), ExtResource("2_4e4qj"), ExtResource("6_xvelj")])

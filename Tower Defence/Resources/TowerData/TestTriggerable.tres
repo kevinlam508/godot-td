@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TowerData" load_steps=3 format=3 uid="uid://dlsjggih76yk3"]
+
+[ext_resource type="PackedScene" uid="uid://dfq0xuwl2fpi" path="res://Scenes/GridShapes/Towers/Test/TestTriggerable.tscn" id="1_y0mma"]
+[ext_resource type="Script" path="res://Scripts/GameData/TowerData.cs" id="2_mfois"]
+
+[resource]
+script = ExtResource("2_mfois")
+_name = "Triggerable"
+_cost = 0
+_towerScene = ExtResource("1_y0mma")

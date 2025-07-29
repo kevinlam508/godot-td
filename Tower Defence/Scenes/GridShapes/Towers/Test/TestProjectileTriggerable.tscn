@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmrtyesgscpi8"]
+
+[ext_resource type="Script" path="res://Scripts/Towers/Test/TestProjectileTriggerable.cs" id="1_veujx"]
+[ext_resource type="PackedScene" uid="uid://csvu4xedeyj4v" path="res://Scenes/Projectiles/TestProjectile.tscn" id="2_aoqlt"]
+[ext_resource type="Resource" uid="uid://fvd35m3ftwk" path="res://Resources/GridShapes/LineShape.tres" id="3_nd4bj"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="3_sbsys"]
+
+[node name="TestProjectileTriggerable" type="Node" node_paths=PackedStringArray("_renderer")]
+script = ExtResource("1_veujx")
+_projectile = ExtResource("2_aoqlt")
+_renderer = NodePath("Node2D")
+Shape = ExtResource("3_nd4bj")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_sbsys")
+Color = Color(0.410351, 0.651407, 0.2867, 1)
+ShowOutline = false

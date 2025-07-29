@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dailb6jqn5qbp"]
+
+[ext_resource type="Script" path="res://DebugTools/Scripts/Draw2D/DebugDraw2D.cs" id="1_0xjbi"]
+
+[node name="DebugDraw2d" type="CanvasLayer"]
+layer = 50
+follow_viewport_enabled = true
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_0xjbi")

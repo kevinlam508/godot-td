@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2eymbuwaa4rl"]
+
+[ext_resource type="Script" path="res://Scripts/DataSystems/Gameplay/Towers/Triggers/TriggerLinkArrow.cs" id="1_g05n1"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="2_hyg8d"]
+
+[node name="TriggerLinkArrow" type="Node2D" node_paths=PackedStringArray("_arrowBody", "_arrowHead")]
+z_index = 1
+script = ExtResource("1_g05n1")
+_defaultBodyLength = 10.0
+_arrowBody = NodePath("BodyScaler")
+_arrowHead = NodePath("HeadPosition")
+
+[node name="BodyScaler" type="Node2D" parent="."]
+
+[node name="Body" type="Node2D" parent="BodyScaler"]
+position = Vector2(3, -1.42109e-14)
+rotation = -1.5708
+scale = Vector2(1, 0.875)
+script = ExtResource("2_hyg8d")
+Color = Color(0.840945, 0.417693, 0.330767, 1)
+Size = 4.0
+Sides = 3
+ShowOutline = false
+
+[node name="HeadPosition" type="Node2D" parent="."]
+position = Vector2(10, 0)
+
+[node name="Head" type="Node2D" parent="HeadPosition"]
+position = Vector2(-8, 0)
+rotation = -1.5708
+script = ExtResource("2_hyg8d")
+Color = Color(0.840945, 0.417693, 0.330767, 1)
+Size = 4.0
+Sides = 3
+ShowOutline = false

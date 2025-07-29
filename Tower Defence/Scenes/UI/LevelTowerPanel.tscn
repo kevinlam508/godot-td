@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6c8fjmmekwtw"]
+
+[ext_resource type="Script" path="res://Scripts/UI/LevelTowerPanel.cs" id="1_2omug"]
+[ext_resource type="PackedScene" uid="uid://c4eptfk7jsb78" path="res://Scenes/UI/BuyTowerButton.tscn" id="2_dbf7o"]
+[ext_resource type="Resource" uid="uid://bau7v6bgwxa6r" path="res://Resources/TowerList/TestTowerList.tres" id="3_icfh1"]
+
+[node name="Buy Panel" type="PanelContainer" node_paths=PackedStringArray("_listContainer")]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -181.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("1_2omug")
+_listContainer = NodePath("VBoxContainer")
+_towerListing = ExtResource("2_dbf7o")
+_towers = ExtResource("3_icfh1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LinkModeButton" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+text = "Link Mode"
+
+[connection signal="button_down" from="VBoxContainer/LinkModeButton" to="." method="OnLinkModePressed"]

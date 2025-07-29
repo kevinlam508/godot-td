@@ -1,0 +1,54 @@
+[gd_scene load_steps=15 format=3 uid="uid://dwxm67uupj0cw"]
+
+[ext_resource type="Script" path="res://Scripts/LevelManager.cs" id="1_1iq5g"]
+[ext_resource type="Script" path="res://Scripts/TerrainGrid/TerrainGrid.cs" id="1_2ceqc"]
+[ext_resource type="PackedScene" uid="uid://dvc5841f3sqka" path="res://Scenes/GridShapes/GenericGridObject.tscn" id="2_dyqka"]
+[ext_resource type="PackedScene" uid="uid://cybp4tls6rvdf" path="res://Scenes/Tiles/TestTile.tscn" id="2_tqiuq"]
+[ext_resource type="PackedScene" uid="uid://bg0tah1rdbv11" path="res://Scenes/Mobs/TestMob.tscn" id="3_3b28c"]
+[ext_resource type="PackedScene" uid="uid://bed5fpj2oqwfh" path="res://Scenes/Tiles/TileCursor.tscn" id="3_cslge"]
+[ext_resource type="PackedScene" uid="uid://qislm3lalk7j" path="res://Scenes/Tiles/ArrowTile.tscn" id="4_ga35g"]
+[ext_resource type="Script" path="res://Scripts/CameraController.cs" id="5_1dwg8"]
+[ext_resource type="PackedScene" uid="uid://c7dsuiahwxvix" path="res://Scenes/Systems/MobSpawnSystem.tscn" id="8_3l5us"]
+[ext_resource type="PackedScene" uid="uid://0vw3kf4l4x6i" path="res://Scenes/Systems/TriggerLinkRenderSystem.tscn" id="8_kdc5h"]
+[ext_resource type="PackedScene" uid="uid://dav8kn6d1patp" path="res://Scenes/UI/Level UI.tscn" id="8_v8pv0"]
+[ext_resource type="Resource" uid="uid://li6yyo05mosr" path="res://Resources/Beastiary.tres" id="9_ngvhr"]
+[ext_resource type="PackedScene" uid="uid://desjnsqhb6y43" path="res://Scenes/Systems/ProjectileSpawnSystem.tscn" id="9_wvtiw"]
+[ext_resource type="PackedScene" uid="uid://b6c8fjmmekwtw" path="res://Scenes/UI/LevelTowerPanel.tscn" id="10_hl650"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_gridRender", "_towerPanel", "_nodeSystems")]
+script = ExtResource("1_1iq5g")
+_testGridObject = ExtResource("2_dyqka")
+_testMob = ExtResource("3_3b28c")
+_gridRender = NodePath("Grid")
+_towerPanel = NodePath("LevelUi/Buy Panel")
+_nodeSystems = [NodePath("MobSpawnSystem"), NodePath("ProjectileSpawnSystem"), NodePath("TriggerLinkRenderSystem")]
+
+[node name="Grid" type="Node" parent="."]
+script = ExtResource("1_2ceqc")
+_tile = ExtResource("2_tqiuq")
+_arrowTile = ExtResource("4_ga35g")
+_tileCursorScene = ExtResource("3_cslge")
+
+[node name="MobSpawnSystem" parent="." instance=ExtResource("8_3l5us")]
+_beastiary = ExtResource("9_ngvhr")
+_waveScriptPath = "res://Resources/Waves/TestLevelWaves.txt"
+
+[node name="ProjectileSpawnSystem" parent="." instance=ExtResource("9_wvtiw")]
+
+[node name="TriggerLinkRenderSystem" parent="." instance=ExtResource("8_kdc5h")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 360)
+limit_left = -100
+limit_top = -100
+limit_right = 1380
+limit_bottom = 820
+editor_draw_limits = true
+script = ExtResource("5_1dwg8")
+_maxZoom = 1.0
+_minZoom = 2.0
+_holdZoomSpeedMultiplier = 5.0
+
+[node name="LevelUi" parent="." instance=ExtResource("8_v8pv0")]
+
+[node name="Buy Panel" parent="LevelUi" instance=ExtResource("10_hl650")]

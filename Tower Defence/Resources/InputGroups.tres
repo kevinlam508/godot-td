@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="InputGroups" load_steps=6 format=3 uid="uid://cnx1rromj5j25"]
+
+[ext_resource type="Script" path="res://Scripts/Input/InputGroup.cs" id="1_ve4pu"]
+[ext_resource type="Script" path="res://Scripts/Input/InputGroups.cs" id="2_uw7dl"]
+
+[sub_resource type="Resource" id="Resource_npw3n"]
+script = ExtResource("1_ve4pu")
+Name = "Camera"
+InputActions = Array[String](["camera_zoom_in", "camera_zoom_out", "camera_pan_drag"])
+
+[sub_resource type="Resource" id="Resource_nqmg3"]
+script = ExtResource("1_ve4pu")
+Name = "Debug"
+InputActions = Array[String](["debug_next_tool", "debug_previous_tool", "debug_primary_action", "debug_secondary_action"])
+
+[sub_resource type="Resource" id="Resource_7maf8"]
+script = ExtResource("1_ve4pu")
+Name = "Level"
+InputActions = Array[String](["tower_placement_rotate", "level_select_action"])
+
+[resource]
+script = ExtResource("2_uw7dl")
+Groups = Array[Object]([SubResource("Resource_npw3n"), SubResource("Resource_nqmg3"), SubResource("Resource_7maf8")])

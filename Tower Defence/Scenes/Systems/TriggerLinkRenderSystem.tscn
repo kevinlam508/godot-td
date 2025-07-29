@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://0vw3kf4l4x6i"]
+
+[ext_resource type="Script" path="res://Scripts/DataSystems/Gameplay/Towers/Triggers/TriggerLinkRenderSystem.cs" id="1_baslm"]
+[ext_resource type="PackedScene" uid="uid://c2eymbuwaa4rl" path="res://Scenes/Systems/TriggerLinkArrow.tscn" id="2_my4hn"]
+
+[node name="TriggerLinkRenderSystem" type="Node" node_paths=PackedStringArray("_arrowsRoot")]
+script = ExtResource("1_baslm")
+_arrowsRoot = NodePath("ArrowRoot")
+_arrowTemplate = ExtResource("2_my4hn")
+
+[node name="ArrowRoot" type="Node2D" parent="."]

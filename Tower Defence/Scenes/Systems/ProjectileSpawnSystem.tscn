@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://desjnsqhb6y43"]
+
+[ext_resource type="Script" path="res://Scripts/DataSystems/Gameplay/Spawn/ProjectileSpawnSystem.cs" id="1_rob8y"]
+
+[node name="ProjectileSpawnSystem" type="Node"]
+script = ExtResource("1_rob8y")

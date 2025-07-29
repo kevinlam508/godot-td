@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://qislm3lalk7j"]
+
+[ext_resource type="Script" path="res://Scripts/HexGrid/Tiles/ArrowTile2D.cs" id="1_0hers"]
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="2_8obl0"]
+
+[node name="ArrowTile" type="Node" node_paths=PackedStringArray("_positionRoot", "_arrowTransform")]
+script = ExtResource("1_0hers")
+_positionRoot = NodePath("PositionRoot")
+_arrowTransform = NodePath("PositionRoot/ArrowRotation")
+
+[node name="PositionRoot" type="Node2D" parent="."]
+
+[node name="ArrowRotation" type="Node2D" parent="PositionRoot"]
+
+[node name="Node2D" type="Node2D" parent="PositionRoot/ArrowRotation"]
+position = Vector2(-4, 0)
+rotation = 1.5708
+scale = Vector2(0.75, 1)
+script = ExtResource("2_8obl0")
+Size = 3.0
+Sides = 3
+ShowOutline = false

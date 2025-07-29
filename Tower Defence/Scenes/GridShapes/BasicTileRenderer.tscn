@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dev3r0gdwqiog"]
+
+[ext_resource type="Script" path="res://Scripts/NgonRenderer2D.cs" id="1_0jrik"]
+
+[node name="BasicTileRenderer" type="Node2D"]
+script = ExtResource("1_0jrik")
+Color = Color(0.41994, 0.64828, 0.907832, 1)
